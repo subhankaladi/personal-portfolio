@@ -4,6 +4,8 @@ import React, { useEffect } from "react";
 import Typed from "typed.js";
 import Link from "next/link";
 import "./Home.css";
+import Image from 'next/image';
+
 
 const Home = () => {
   useEffect(() => {
@@ -51,10 +53,10 @@ const Home = () => {
       </div>
       <div className="mid-div">
         <div className="main-div">
-          <div className="hello-div">Hello It's Me</div>
+          <div className="hello-div">Hello It&apos;s Me</div>
           <div className="name-div">Subhan Kaladi</div>
           <div className="skills-div">
-            And I'm <span className="auto-type"></span>
+            And I&apos;m <span className="auto-type"></span>
           </div>
           <div className="intro-div">
             And I am Currently Pursuing Software Engineering With A Focus On
@@ -69,15 +71,15 @@ const Home = () => {
               href="https://www.facebook.com/subhanallahkaladi"
               target="_blank"
             >
-              <img src="/fb.webp" alt="fb-logo" />
+              <Image src="/fb.webp" alt="fb-logo" />
             </a>
             <a href="https://www.instagram.com/subhan_kaladi/" target="_blank">
-              <img src="insta.png" alt="insta-logo" />
+              <Image src="insta.png" alt="insta-logo" />
             </a>
           </div>
         </div>
         <div className="img-div">
-          <img className="subhan-logo" src="/SUBHAN.png" alt="subhan's photo" />
+          <Image className="subhan-logo" src="/SUBHAN.png" alt="subhan's photo" />
         </div>
       </div>
 

@@ -2,6 +2,8 @@
 
 
 import "./About.css";
+import Image from 'next/image';
+
 
 const About = () => {
   return (
@@ -10,7 +12,7 @@ const About = () => {
         <div className="free-div"></div>
         <div className="about-content">
           <div className="about-image">
-            <img
+            <Image
               className="subhan-about-logo"
               src="/subhan-ab.png"
               alt="subhan's photo"
