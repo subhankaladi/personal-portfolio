@@ -1,0 +1,213 @@
+
+
+.heading-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content:space-between;
+    padding: 50px;
+    color: white;
+    font-size: 1.5rem;
+    flex-wrap: wrap; 
+
+  }
+  .portfolio-div{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+  
+  }
+  .navbar-div ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+  flex-wrap: wrap; 
+  }
+  
+  .navbar-div ul li {
+    margin: 0 10px; 
+    border: 2px solid rgba(0, 179, 192, 0.616);
+    padding: 5px;
+    box-shadow: 0 0 2px 1px rgba(0, 179, 192, 0.5);
+    border-radius: 5px; 
+  }
+  .navbar-div ul li:hover{
+    box-shadow: 0 0 25px 2px rgb(0, 225, 250);
+    
+  }
+  
+  .main-div{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px;
+
+    
+  }
+  .subhan-logo{
+    width: 400px;
+    height: 400px;
+    transition: transform 0.3s ease;  /* Smooth transition for hover effect */
+
+
+
+
+  }
+  .subhan-logo:hover{
+  transform: scale(1.05);  /* Slight zoom on hover */
+
+
+
+    }
+  .mid-div{
+    display: flex;
+    margin: 70px 0 0 0;
+    gap: 450px;
+    font-family: Arial, Helvetica, sans-serif;
+
+  
+  
+    
+  }
+  .intro-div{
+    
+      max-width: 500px; 
+      word-wrap: break-word; 
+      overflow-wrap: break-word;
+      line-height: 1.5; 
+    
+    
+  }
+  .hello-div, .skills-div, .name-div{
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+  }
+  .name-div{
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  img{
+    width: 50px;
+  }
+  .auto-type{
+    color: rgb(0, 225, 250);
+  }
+  /* button{
+    margin-left: 50px;
+    
+    border: none;
+    background-color: rgb(0, 225, 250);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px 0px rgb(0, 225, 250);
+    padding: 10px 40px 10px 40px;
+  } */
+  Link{
+    text-decoration: none;
+  }
+  
+  .navbar-div ul li a {
+    color: white; 
+    text-decoration: none; 
+  }
+  
+  .navbar-div ul li a:hover {
+    text-decoration: none; 
+    
+    
+    
+  }
+  
+  
+  
+  .navbar-div ul li a:visited {
+    color: white;
+  }
+  
+  
+ 
+@media (max-width: 768px) {
+  .heading-div {
+    padding: 10px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .navbar-div ul {
+    gap: 10px;
+  }
+
+  .mid-div {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .subhan-logo {
+margin: 0 0 0 100px;
+  }
+
+  .hello-div, .name-div, .skills-div {
+    font-size: 1.8rem;
+  }
+  
+
+
+  
+}
+
+/* For Mobile Devices */
+@media (max-width: 480px) {
+  .heading-div {
+    padding: 10px;
+    font-size: 1.2rem;
+    gap: 20px;
+   
+  }
+  
+  .animated-button1{
+    margin: 0 0 0 100px;
+  }
+
+  .navbar-div ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    
+  }
+  
+
+  .main-div {
+    padding: 15px;
+    justify-content: center;
+    
+  }
+
+  .subhan-logo {
+margin: 0 100px 0 0;    
+  }
+
+  .hello-div, .name-div, .skills-div {
+    font-size: 1.5rem;
+  }
+
+  .intro-div {
+    max-width: 100%;
+    
+  }
+
+  
+}
+#animated-button{
+  margin: 0 0 0 50px;
+}
+/* button:hover{
+  box-shadow: 0 0 25px 2px rgb(0, 225, 250);
+
+} */
+
+
