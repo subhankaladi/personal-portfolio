@@ -6,17 +6,16 @@ import Link from "next/link";
 import "./Home.css";
 import Image from 'next/image';
 
-
 const Home = () => {
   useEffect(() => {
     const options = {
       strings: [
-        " Expert in HTML",
-        " Expert in  CSS",
-        " Expert in TypeScript",
-        " Expert in  JavaScript",
-        " Expert in React.Js",
-        " Expert in Next.Js",
+        "Expert in HTML",
+        "Expert in CSS",
+        "Expert in TypeScript",
+        "Expert in JavaScript",
+        "Expert in React.Js",
+        "Expert in Next.Js",
       ],
       typeSpeed: 80,
       backSpeed: 80,
@@ -37,16 +36,14 @@ const Home = () => {
         <div className="navbar-div">
           <ul>
             <li>
-              <Link href={"/"}>Home</Link>
+              <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href={"/about"}>About</Link>
+              <Link href="/about">About</Link>
             </li>
+            
             <li>
-              <Link href={"/conatct"}>Contact</Link>
-            </li>
-            <li>
-              <Link href={"/service"}>Service</Link>
+              <Link href="/service">Service</Link>
             </li>
           </ul>
         </div>
@@ -59,27 +56,19 @@ const Home = () => {
             And I&apos;m <span className="auto-type"></span>
           </div>
           <div className="intro-div">
-            And I am Currently Pursuing Software Engineering With A Focus On
-            Artificial Intelligence (AI). I Am Passionate About Learning
-            Generative AI And Developing Solutions Using Tools Like Docker,
-            Ubuntu, And Modern Python. I Enjoy Working On Innovative Projects,
-            From Building Apps To Exploring Cloud-native Technologies.
+            I am currently pursuing Software Engineering with a focus on AI. I am passionate about learning Generative AI and developing solutions using Docker, Ubuntu, and Python.
           </div>
           <div className="logo-section">
-            <a
-              className="fb-logo"
-              href="https://www.facebook.com/subhanallahkaladi"
-              target="_blank"
-            >
-              <Image src="/fb.webp" alt="fb-logo" />
+            <a href="https://www.facebook.com/subhanallahkaladi" target="_blank" rel="noopener noreferrer">
+              <Image src="/fb.webp" alt="fb-logo" width={40} height={40}/> 
             </a>
-            <a href="https://www.instagram.com/subhan_kaladi/" target="_blank">
-              <Image src="insta.png" alt="insta-logo" />
+            <a href="https://www.instagram.com/subhan_kaladi/" target="_blank" rel="noopener noreferrer">
+              <Image src="/insta.png" alt="insta-logo" width={40} height={40} />
             </a>
           </div>
         </div>
         <div className="img-div">
-          <Image className="subhan-logo" src="/SUBHAN.png" alt="subhan's photo" />
+          <Image className="subhan-logo" src="/SUBHAN.png" alt="subhan's photo" width={1000} height={1000} />
         </div>
       </div>
 

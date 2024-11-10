@@ -91,9 +91,9 @@
     font-weight: bold;
     font-size: 2.5rem;
   }
-  img{
+  /* img{
     width: 50px;
-  }
+  } */
   .auto-type{
     color: rgb(0, 225, 250);
   }
@@ -149,6 +149,10 @@
 
   .subhan-logo {
 margin: 0 0 0 100px;
+
+  width: 400px; /* This width should match your image's natural width */
+  height: 400px;
+
   }
 
   .hello-div, .name-div, .skills-div {

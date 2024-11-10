@@ -1,7 +1,7 @@
 import React from 'react'
-import Home from './component/home/Home'
-import About from './component/about/About'
-import Service from './component/service/Service'
+import Home from './component/home/page'
+import About from './component/aboutsection/page'
+import Service from './component/servicesection/Service'
 
 const page = () => {
   return (

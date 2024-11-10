@@ -1,0 +1,271 @@
+
+
+.service-page {
+    background-color: rgb(16, 61, 78);
+    height: 100vh;
+    
+   
+  
+  }
+  .h1-service-page{
+    text-align: center;
+    color: white;
+   padding: 25px 0 0 0;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   span{
+    color:   rgb(0, 225, 250)
+    ;
+   }
+  }
+  
+  .cntenr {
+    height: 100vh;
+    width: 100vw;
+    max-height: 600px;
+    max-width: 1200px;
+    min-height: 600px;
+    min-width: 1100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .panel {
+    height: 270px;
+    width: 190px;
+    position: relative;
+  }
+  
+  .panel:hover .card {
+    filter: blur(1.5px);
+  }
+  
+  .panel:hover .title {
+    color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .panel:hover .border {
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+  
+  .panel:hover .slide {
+    bottom: 0px;
+    z-index: 10; /* Ensures slide is on top */
+  }
+  
+  .panel:hover .ring:before,
+  .panel:hover .ring:after {
+    transform: translateX(-50%) translateY(-50%) rotate(310deg);
+  }
+  
+  .ring,
+  .card,
+  .border,
+  .slide,
+  .line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ring {
+    color: #fffbf1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 170px;
+    
+  }
+  
+  .card {
+    background: #000000;
+    position: relative;
+    transition: all 1s;
+    height: 270px;
+    width: 190px;
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+  
+  .card1 {
+    background-image: url("/hbd1.png"); /* First card image */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .card2 {
+    background-image: url("/joke1.jpg"); /* Second card image */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .card3 {
+    background-image: url("/ctrl1.png"); /* Third card image */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .ring:before,
+  .ring:after {
+    content: "";
+    padding: 0.7em 0.4em;
+    position: absolute;
+    left: 50%;
+    width: 115%;
+    top: 50%;
+    display: block;
+    border: 5px solid #50c9c3;
+    border-radius: 50%;
+    transition: transform 1s;
+    transform: translateX(-50%) translateY(-50%) rotate(50deg);
+  }
+  
+  .ring:before {
+    border-color: rgb(235, 235, 235) rgb(235, 235, 235) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    z-index: -1;
+  }
+  
+  .ring:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(235, 235, 235) rgb(235, 235, 235);
+  }
+  
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+    transition: all 1s;
+    top: 0;
+  }
+  
+  .para {
+    bottom: 0;
+    font-size: 22px;
+    font-family: sans-serif;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .border {
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    height: 260px;
+    width: 180px;
+    transition: border 1s;
+    overflow: hidden;
+  }
+  
+  .slide {
+    height: 260px;
+    width: 180px;
+    position: absolute;
+    border: 1px solid black;
+    bottom: -270px;
+    background: rgba(91, 91, 91, 0.5);
+    transition: bottom 1s;
+    flex-direction: column;
+    z-index: 10; /* Slide will be above other content */
+    overflow: hidden;
+  }
+  
+  .fa-plane {
+    font-size: 16px;
+  }
+  
+  /* Button */
+  .btn {
+    background-color: rgb(0, 225, 250); 
+    color: white; 
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    z-index: 20; 
+  }
+  
+  .btn:hover {
+    box-shadow: 0 0 25px 2px rgb(0, 225, 250);
+  }
+  
+  
+  /* Responsive Styles */
+  
+  /* For Tablets and Medium Screens */
+  @media (max-width: 1024px) {
+    .cntenr {
+      flex-direction: column; /* Stack the panels vertically */
+      max-width: 100%;
+      min-width: 100%;
+      height: auto; /* Allow height to adapt */
+      max-height: none;
+      justify-content: center;
+    }
+  
+    .panel {
+      margin-bottom: 20px; /* Add spacing between panels */
+    }
+  }
+  
+  /* For Mobile Devices and Small Screens */
+  @media (max-width: 768px) {
+    .h1-service-page {
+      font-size: 1.8rem; /* Adjust heading size */
+      padding: 15px 0; /* Reduce padding for the heading */
+    }
+  
+    .panel {
+      height: 230px; /* Reduce panel height for smaller screens */
+      width: 160px; /* Reduce panel width for smaller screens */
+    }
+  
+    .card, .border, .slide {
+      height: 230px; /* Adjust height for all elements inside the panel */
+      width: 160px; /* Adjust width for all elements inside the panel */
+    }
+  
+    .para {
+      font-size: 18px; /* Adjust paragraph text size */
+      padding: 15px; /* Reduce padding for text */
+    }
+  
+    .btn {
+      padding: 8px 16px; /* Reduce button size */
+      font-size: 14px; /* Adjust button text size */
+    }
+  }
+  
+  /* For Extra Small Mobile Devices */
+  @media (max-width: 480px) {
+    .h1-service-page {
+      font-size: 1.5rem; /* Further reduce heading size */
+    }
+  
+    .cntenr {
+      padding: 10px; /* Add some padding to the container */
+    }
+  
+    .panel {
+      height: 200px; /* Further reduce panel height */
+      width: 140px; /* Further reduce panel width */
+    }
+  
+    .card, .border, .slide {
+      height: 200px; /* Match the height of the panel */
+      width: 140px; /* Match the width of the panel */
+    }
+  
+    .para {
+      font-size: 16px; /* Smaller paragraph text */
+    }
+  
+    .btn {
+      padding: 6px 12px; /* Smaller button padding */
+      font-size: 12px; /* Smaller button text size */
+    }
+  }
+  
